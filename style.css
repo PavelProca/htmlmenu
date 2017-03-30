@@ -1,0 +1,22 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.main-wrapper {
+	margin: 0 auto;
+	width: 100%;
+	padding-left: 240px;
+	box-sizing: border-box;
+}
+
+.side-menu {
+	height: 100vh;
+	max-width: 240px;
+	background: #9d41ea;
+	position: fixed;
+}
+
+.main-content {
+	background: #2658ca;
+}
