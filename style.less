@@ -22,22 +22,19 @@
 .first-level {
 	width: 240px;
 	background: blue;
-	transition: width 1s;
+	transition: width 0.5s linear;
 }
-.second-level {background: green;}
 .second-level {
-	display: none;
-	width: 190px;
+	display: block;
+	width: 0;
 	overflow: hidden;
-	transition: width 1s;
-	z-index: 2;
+	transition: width 0.5s linear;
+	background: green;
 }
 .first-level.active {width: 50px;}
-.second-level.active {
-	display: block;
-}
-.first-level:hover {width: 240px;}
-.first-level:hover ~ .second-level{width: 0;}
+.second-level.active {width: 190px;}
+.first-level.move:hover {width: 240px;}
+.first-level.move:hover ~ .second-level {width: 0px;}
 .side-menu .menu-element {
 	height: 30px;
 	line-height: 28px;
