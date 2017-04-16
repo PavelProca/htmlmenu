@@ -1,22 +1,44 @@
-var fcheck = 0;
-var scheck = 0;
-function next(element) {
-	if (fcheck == 0) {
-		document.getElementsByClassName('mnulvl')[0].classList.toggle('active');
-		document.getElementsByClassName('mnulvl')[1].classList.toggle('active');
-		fcheck = 1;
-		scheck = 1;
-	} else if (fcheck == 1) {fcheck=1;}
-	if (element===1) {document.getElementById("p1").innerHTML = "ASD element selected!";}
-	else if (element===2) {document.getElementById("p1").innerHTML = "DSA element selected!";}
-	else if (element===3) {document.getElementById("p1").innerHTML = "QWE element selected!";}
+var scheck=false;
+function toggle(parametr) {
+	document.getElementsByClassName('mnulvl')[0].style.transition = 'all 0.5s linear';
+	document.getElementsByClassName('mnulvl')[1].style.transition = 'all 0.5s linear';
+	if (parametr===true) {
+		document.getElementsByClassName('mnulvl')[0].style.width = '50px';
+		document.getElementsByClassName('mnulvl')[0].style.background = '#ab4561';
+		document.getElementsByClassName('mnulvl')[1].style.width = '190px';	
+	} else {
+		document.getElementsByClassName('mnulvl')[0].style.width = '240px';
+		document.getElementsByClassName('mnulvl')[0].style.background = 'blue';
+		document.getElementsByClassName('mnulvl')[1].style.width = '0px';
+	}
 }
 
-function check() {
-	if (scheck == 0) {return;}
-	else if (scheck == 1) {
-		scheck = 2;
-		document.getElementsByClassName('mnulvl')[0].classList.toggle('move');
+function check(menu) {
+	switch(menu) {
+		case 1: 
+			toggle(false);
+			scheck=false;
+			document.getElementById("p1").innerHTML = "pressed item1; " + "scheck =" + scheck;
+			break;
+		case 2:
+			toggle(true);
+			scheck=true;
+			document.getElementById("p1").innerHTML = "pressed item2; " + "scheck =" + scheck;
+			document.getElementsByClassName('cont-menu')[0].style.display = 'block';
+			document.getElementsByClassName('cont-menu')[1].style.display = 'none';
+			break;
+		case 3:
+			toggle(true);
+			scheck=true;
+			document.getElementById("p1").innerHTML = "pressed item 3; " + "scheck =" + scheck;
+			document.getElementsByClassName('cont-menu')[1].style.display = 'block';
+			document.getElementsByClassName('cont-menu')[0].style.display = 'none';
+			break;
+		default:
+			if (scheck===true) {toggle(true);}; 
 	}
-	else if (scheck == 2) {return;}
 }
+
+window.onload = function() {
+    document.getElementById("p1").innerHTML = "scheck =" + scheck;
+};

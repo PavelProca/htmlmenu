@@ -7,15 +7,24 @@
 </head>
 <body>
 	<div class="side-menu">
-		<div class="first-level mnulvl" onMouseOver="check()">
-			<div class="menu-element" onClick="next(1)">asd</div>
-			<div class="menu-element" onClick="next(2)">dsa</div>
-			<div class="menu-element" onClick="next(3)">qwe</div>
+		<div class="first-level mnulvl" onMouseOver="toggle(false)" onMouseLeave="check()">
+			<div class="menu-element" onClick="check(1)">item 1</div>
+			<div class="menu-element" onClick="check(2)">item 2</div>
+			<div class="menu-element" onClick="check(3)">item 3</div>
 		</div>
 		<div class="second-level mnulvl">
-			<div class="menu-element">gfdhfd</div>
-			<div class="menu-element">gfdhfd</div>
-			<div class="menu-element">gfdhfd</div>
+			<div class="cont-menu">
+				<div class="menu-element">1</div>
+				<div class="menu-element">2</div>
+				<div class="menu-element">3</div>
+			</div>
+			<div class="cont-menu">
+				<div class="menu-element">One</div>
+				<div class="menu-element">Two</div>
+				<div class="menu-element">Three</div>
+				<div class="menu-element">Four</div>
+				<div class="menu-element">Five</div>
+			</div>
 		</div>
 	</div>
 
