@@ -8,9 +8,13 @@
 <body>
 	<div class="side-menu">
 		<div class="first-level mnulvl" onMouseOver="toggle(false)" onMouseLeave="check()">
-			<div class="menu-element" onClick="check(1)">item 1</div>
-			<div class="menu-element" onClick="check(2)">item 2</div>
-			<div class="menu-element" onClick="check(3)">item 3</div>
+			<div class="logo">
+			</div>
+			<div class="menu-section">
+				<div class="menu-element active" onClick="check(1)">Dashboard</div>
+				<div class="menu-element" onClick="check(2)">Users and Roles</div>
+				<div class="menu-element" onClick="check(3)">Content</div>
+			</div>
 		</div>
 		<div class="second-level mnulvl">
 			<div class="cont-menu">
@@ -29,11 +33,7 @@
 	</div>
 
 	<div class="main-wrapper">
-		<div class="main-content">
-			<p id="p1">
-				no elements selected
-			</p>
-		</div>
+		<div class="main-content"></div>
 	</div>
 </body>
 </html>

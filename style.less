@@ -16,24 +16,37 @@
 	height: 100vh;
 	width: 240px;
 	display: flex;
-	background: #9d41ea;
 	position: fixed;
 }
 .first-level {
 	width: 240px;
-	background: blue;
+	color: rgba(255,255,255,0.8);
+	background: #333D47;
 }
 .second-level {
 	display: block;
 	width: 0;
 	overflow: hidden;
-	background: green;
+	background: #333D47;
+	.cont-menu .menu-element:hover {border: none; padding: 18px;}
 }
 .cont-menu {display: none;}
 .side-menu .menu-element {
-	height: 30px;
-	line-height: 28px;
-	padding: 5px 0;
+	height: 60px;
+	padding: 18px;
+	box-sizing: border-box;
+	line-height: 25px;
+	color: #fff;
 	cursor: pointer;
-	&:hover {background: red;}
+	&:hover, &.active, &.active:hover {
+		padding-left: 14px;
+		background: #1E242A;
+		border-left: 4px solid #92DEFF;
+	}
+}
+
+.logo {
+	height: 60px;
+	padding: 18px;
+	box-sizing: border-box;
 }
