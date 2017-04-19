@@ -3,13 +3,18 @@ function toggle(parametr) {
 	document.getElementsByClassName('mnulvl')[0].style.transition = 'all 0.5s linear';
 	document.getElementsByClassName('mnulvl')[1].style.transition = 'all 0.5s linear';
 	if (parametr===true) {
-		document.getElementsByClassName('mnulvl')[0].style.width = '50px';
+		document.getElementsByClassName('mnulvl')[0].style.width = '60px';
 		document.getElementsByClassName('mnulvl')[0].style.background = '#1E242A';
-		document.getElementsByClassName('mnulvl')[1].style.width = '190px';	
+		document.getElementsByClassName('mnulvl')[1].style.width = '180px';	
+		document.getElementsByName('section-name')[0].style.color = 'transparent';
+		document.getElementsByName('section-name')[1].style.color = 'transparent';
 	} else {
 		document.getElementsByClassName('mnulvl')[0].style.width = '240px';
 		document.getElementsByClassName('mnulvl')[0].style.background = '#333D47';
 		document.getElementsByClassName('mnulvl')[1].style.width = '0px';
+		document.getElementsByName('section-name')[0].style.color = 'inherit';
+		document.getElementsByName('section-name')[1].style.color = 'inherit';
+
 	}
 }
 

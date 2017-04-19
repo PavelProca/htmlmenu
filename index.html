@@ -9,11 +9,49 @@
 	<div class="side-menu">
 		<div class="first-level mnulvl" onMouseOver="toggle(false)" onMouseLeave="check()">
 			<div class="logo">
+				<div class="svg-elem"></div>
+				<div class="item-name">iManage</div>
 			</div>
+
+			<div class="menu-element active" onClick="check(1)">
+				<div class="svg-elem"></div>
+				<div class="item-name">Dashboard</div>
+			</div>
+			<div class="menu-element" onClick="check(2)">
+				<div class="svg-elem"></div>
+				<div class="item-name">Users and Roles</div>
+			</div>
+			<div class="menu-element" onClick="check(3)">
+				<div class="svg-elem"></div>
+				<div class="item-name">Content</div>
+			</div>
+
 			<div class="menu-section">
-				<div class="menu-element active" onClick="check(1)">Dashboard</div>
-				<div class="menu-element" onClick="check(2)">Users and Roles</div>
-				<div class="menu-element" onClick="check(3)">Content</div>
+				<h2 name="section-name">Configure</h2>
+				<div class="menu-element" onClick="check(2)">
+					<div class="svg-elem"></div>
+					<div class="item-name">Metadata</div>
+				</div>
+				<div class="menu-element" onClick="check(3)">
+					<div class="svg-elem"></div>
+					<div class="item-name">System setup</div>
+				</div>
+			</div>
+
+			<div class="menu-section">
+				<h2 name="section-name">Application</h2>
+				<div class="menu-element" onClick="check(3)">
+					<div class="svg-elem"></div>
+					<div class="item-name">Walls</div>
+				</div>
+				<div class="menu-element" onClick="check(2)">
+					<div class="svg-elem"></div>
+					<div class="item-name">Threat Manager</div>
+				</div>
+				<div class="menu-element" onClick="check(3)">
+					<div class="svg-elem"></div>
+					<div class="item-name">Volter</div>
+				</div>
 			</div>
 		</div>
 		<div class="second-level mnulvl">
