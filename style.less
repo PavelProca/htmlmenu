@@ -43,12 +43,19 @@
 	color: rgba(255,255,255,0.8);
 	white-space: nowrap;
 	cursor: pointer;
-	&:hover, &.active, &.active:hover {
+	&:hover {
 		padding-left: 14px;
 		border-left: 4px solid #92DEFF;
 		background: #1E242A;
 		color: #fff;
 	}
+}
+input[type="radio"] {display: none;}
+input[type="radio"]:checked + label .menu-element{
+	padding-left: 14px;
+	border-left: 4px solid #92DEFF;
+	background: #1E242A;
+	color: #fff;
 }
 .menu-section {
 	margin-top: 20px;
@@ -67,9 +74,11 @@
 	overflow: hidden;
 	border-bottom: 1px solid rgba(255,255,255,0.2);
 	box-sizing: border-box;
+	font-size: 16px;
 	line-height: 25px;
 	color: #fff;
 }
+
 .svg-elem {
 	position: absolute;
 	width: 24px;
