@@ -2,8 +2,12 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-size: 14px;
 	font-family: 'Open Sans', sans-serif;
+}
+body {
+	background: #eee;
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.8);
 }
 .main-wrapper {
 	margin: 0 auto;
@@ -11,16 +15,38 @@
 	padding-left: 240px;
 	box-sizing: border-box;
 }
-.main-content {
-	background: yellow;
+.header {
+	height: 60px;
+	background: #fff;
+	box-shadow: 0 0 4px rgba(0,0,0,0.4);
+	h1 {
+		margin-left: 24px;
+		font-size: 24px;
+		font-weight: 600;
+		line-height: 60px;
+	}
 }
 // SIDE MENU STYLES
+.close {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	svg {cursor: pointer;}
+}
 .side-menu {
 	height: 100vh;
 	width: 240px;
 	display: flex;
 	color: rgba(255,255,255,0.4);
 	position: fixed;
+	overflow: auto;
+}
+.burger {
+	display: none;
+	position: absolute;
+	top: 17px;
+	fill: rgba(0, 0, 0, 0.8);
+	cursor: pointer;
 }
 .first-level {
 	width: 240px;
@@ -32,7 +58,16 @@
 	overflow: hidden;
 	background: #333D47;
 	z-index: 1;
-	.cont-menu .menu-element:hover {border: none; padding: 18px;}
+	.cont-menu .menu-element:hover {
+		border: none;
+		padding: 12px;
+		line-height: 10px;
+	}
+	.cont-menu .menu-element {
+		height: 36px;
+		padding: 12px;
+		line-height: 10px;
+	}
 }
 .cont-menu {display: none;}
 .side-menu .menu-element {
@@ -48,14 +83,16 @@
 		border-left: 4px solid #92DEFF;
 		background: #1E242A;
 		color: #fff;
+		svg {fill: #fff;}
 	}
 }
 input[type="radio"] {display: none;}
 input[type="radio"]:checked + label .menu-element{
 	padding-left: 14px;
 	border-left: 4px solid #92DEFF;
-	background: #1E242A;
+	background-color: rgba(0,0,0,0.4);
 	color: #fff;
+	svg {fill: #fff;}
 }
 .menu-section {
 	margin-top: 20px;
@@ -70,6 +107,7 @@ input[type="radio"]:checked + label .menu-element{
 .section-heading {
 	height: 47px;
 	padding: 12px;
+	margin-bottom: 12px;
 	white-space: nowrap;
 	overflow: hidden;
 	border-bottom: 1px solid rgba(255,255,255,0.2);
@@ -83,13 +121,33 @@ input[type="radio"]:checked + label .menu-element{
 	position: absolute;
 	width: 24px;
 	height: 24px;
-	background: grey;
 }
 .item-name {margin-left: 42px;}
 .logo {
 	height: 60px;
-	padding: 18px;
+	padding: 15px 10px;
 	color: #fff;
 	line-height: 25px;
 	box-sizing: border-box;
+}
+
+.arrow {
+	width: 24px;
+	height: 24px;
+	position: relative;
+	top: -25px;
+	right: -186px;
+}
+svg {fill: rgba(255, 255, 255, 0.6);}
+
+// CONTENT
+
+#content {
+	height: 1000px;
+	margin: 30px;
+	background: #fff;
+	img {
+		width: 500px;
+		height: auto;
+	}
 }
