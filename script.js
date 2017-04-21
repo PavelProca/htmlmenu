@@ -65,13 +65,27 @@ function hide(act) {
 	}
 }
 
-function dsa(im) {
+function another(im) {
 	switch(im) {
-		case 1:
-			document.getElementById('pic').src = 'images/cat.png';
+		case 2.1:
+			document.getElementById('elem2.1').checked = 'true';
+			document.getElementById('pic').src = 'images/users.jpg';
 			break;
-		case 2:
-			document.getElementById('pic').src = 'images/birds.jpg';
+		case 2.2:
+			document.getElementById('pic').src = 'images/groups.jpg';
+			break;
+		case 2.3:
+			document.getElementById('pic').src = 'images/roles.jpg';
+			break;
+		case 3.1:
+			document.getElementById('elem3.1').checked = 'true';
+			document.getElementById('pic').src = 'images/documents.jpg';
+			break;
+		case 3.2:
+			document.getElementById('pic').src = 'images/workspaces.jpg';
+			break;
+		case 3.3:
+			document.getElementById('pic').src = 'images/trash.jpg';
 			break;
 		default: return;
 	}

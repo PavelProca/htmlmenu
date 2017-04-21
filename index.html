@@ -32,7 +32,7 @@
 			</label>
 			<input type="radio" name="menu" id="elem2">
 			<label for="elem2">
-				<div class="menu-element" onClick="check(2,'Users'); dsa(1)">
+				<div class="menu-element" onClick="check(2,'Users'); another(2.1)">
 					<div class="svg-elem">
 						<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
     						<path d="M0 0h24v24H0z" fill="none"/>
@@ -50,7 +50,7 @@
 			</label>
 			<input type="radio" name="menu" id="elem3">
 			<label for="elem3">
-				<div class="menu-element" onClick="check(3,'Documents'); dsa(2)">
+				<div class="menu-element" onClick="check(3,'Documents'); another(3.1)">
 					<div class="svg-elem">
 						<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
     						<path d="M0 0h24v24H0z" fill="none"/>
@@ -68,7 +68,7 @@
 			</label>
 
 			<div class="menu-section">
-				<h2 name="section-name">Application</h2>
+				<h2 name="section-name">Configure</h2>
 				<input type="radio" name="menu" id="elem4">
 				<label for="elem4">
 					<div class="menu-element" onClick="check(2)">
@@ -138,12 +138,55 @@
 		<div class="second-level mnulvl">
 			<div class="cont-menu">
 				<div class="section-heading">Access</div>
-				<div class="menu-element" onClick="check(2.1,'Users')">Users</div>
-				<div class="menu-element" onClick="check(2.2,'Groups')">Groups</div>
-				<div class="menu-element" onClick="check(2.3,'Roles')">Roles</div>
+				<input type="radio" name="submenu-1" id="elem2.1" checked>
+				<label for="elem2.1">
+					<div class="menu-element" onClick="check(2.1,'Users'); another(2.1)">Users</div>
+				</label>
+				<input type="radio" name="submenu-1" id="elem2.2">
+				<label for="elem2.2">
+					<div class="menu-element" onClick="check(2.2,'Groups'); another(2.2)">Groups</div>
+				</label>
+				<input type="radio" name="submenu-1" id="elem2.3">
+				<label for="elem2.3">
+					<div class="menu-element" onClick="check(2.3,'Roles'); another(2.3)">Roles</div>
+				</label>
 			</div>
 			<div class="cont-menu">
 				<div class="section-heading">Content</div>
+				<input type="radio" name="submenu-2" id="elem3.1" checked>
+				<label for="elem3.1">
+					<div class="menu-element" onClick="check(3.1,'Documents'); another(3.1)">Documents</div>
+				</label>
+				<input type="radio" name="submenu-2" id="elem3.2">
+				<label for="elem3.2">
+					<div class="menu-element" onClick="check(3.2,'Workspaces'); another(3.2)">Workspaces</div>
+				</label>
+				<input type="radio" name="submenu-2" id="elem3.3">
+				<label for="elem3.3">
+					<div class="menu-element" onClick="check(3.3,'Trash'); another(3.3)">Trash</div>
+				</label>
+
+				<div class="menu-element" onClick="check(3.1,'Documents')">Documents</div>
+				<div class="menu-element" onClick="check(3.2,'Workspaces')">Workspaces</div>
+				<div class="menu-element" onClick="check(3.3,'Trash')">Trash</div>
+				<div class="menu-element" onClick="check(3.1,'Documents')">Documents</div>
+				<div class="menu-element" onClick="check(3.2,'Workspaces')">Workspaces</div>
+				<div class="menu-element" onClick="check(3.3,'Trash')">Trash</div>
+				<div class="menu-element" onClick="check(3.1,'Documents')">Documents</div>
+				<div class="menu-element" onClick="check(3.2,'Workspaces')">Workspaces</div>
+				<div class="menu-element" onClick="check(3.3,'Trash')">Trash</div>
+				<div class="menu-element" onClick="check(3.1,'Documents')">Documents</div>
+				<div class="menu-element" onClick="check(3.2,'Workspaces')">Workspaces</div>
+				<div class="menu-element" onClick="check(3.3,'Trash')">Trash</div>
+				<div class="menu-element" onClick="check(3.1,'Documents')">Documents</div>
+				<div class="menu-element" onClick="check(3.2,'Workspaces')">Workspaces</div>
+				<div class="menu-element" onClick="check(3.3,'Trash')">Trash</div>
+				<div class="menu-element" onClick="check(3.1,'Documents')">Documents</div>
+				<div class="menu-element" onClick="check(3.2,'Workspaces')">Workspaces</div>
+				<div class="menu-element" onClick="check(3.3,'Trash')">Trash</div>
+				<div class="menu-element" onClick="check(3.1,'Documents')">Documents</div>
+				<div class="menu-element" onClick="check(3.2,'Workspaces')">Workspaces</div>
+				<div class="menu-element" onClick="check(3.3,'Trash')">Trash</div>
 				<div class="menu-element" onClick="check(3.1,'Documents')">Documents</div>
 				<div class="menu-element" onClick="check(3.2,'Workspaces')">Workspaces</div>
 				<div class="menu-element" onClick="check(3.3,'Trash')">Trash</div>
