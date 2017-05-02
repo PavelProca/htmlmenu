@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+@menu-bg: #333D47;
+@white: #fff;
+@elem-bg: rgba(0,0,0,0.4);
 * {
 	margin: 0;
 	padding: 0;
@@ -17,8 +20,8 @@ body {
 }
 .header {
 	height: 60px;
-	background: #fff;
-	box-shadow: 0 0 4px rgba(0,0,0,0.4);
+	background: @white;
+	box-shadow: 0 0 4px @elem-bg;
 	h1 {
 		margin-left: 24px;
 		font-size: 24px;
@@ -50,14 +53,14 @@ body {
 }
 .first-level {
 	width: 240px;
-	background: #333D47;
+	background: @menu-bg;
 }
 .second-level {
 	display: block;
 	width: 0;
 	overflow-x: hidden;
 	overflow-y: auto;
-	background: #333D47;
+	background: @menu-bg;
 	z-index: 1;
 	.cont-menu .menu-element:hover {
 		border: none;
@@ -83,8 +86,8 @@ body {
 		padding-left: 14px;
 		border-left: 4px solid #92DEFF;
 		background: #1E242A;
-		color: #fff;
-		svg {fill: #fff;}
+		color: @white;
+		svg {fill: @white;}
 	}
 }
 .second-level input[type="radio"]:checked + label .menu-element {
@@ -92,13 +95,15 @@ body {
 	padding-left: 12px;
 }
 input[type="radio"] {display: none;}
-input[type="radio"]:checked + label .menu-element{
+input[type="radio"]:checked + label .menu-element {
 	padding-left: 14px;
 	border-left: 4px solid #92DEFF;
-	background-color: rgba(0,0,0,0.4);
-	color: #fff;
-	svg {fill: #fff;}
+	background-color: @elem-bg;
+	color: @white;
+	svg {fill: @white;}
 }
+#elem1:checked + label .menu-element {background: @elem-bg;}
+.first-level input[type="radio"]:checked + label .menu-element {background: @menu-bg;}
 .menu-section {
 	margin-top: 20px;
 	h2 {
@@ -119,7 +124,9 @@ input[type="radio"]:checked + label .menu-element{
 	box-sizing: border-box;
 	font-size: 16px;
 	line-height: 25px;
-	color: #fff;
+	color: @white;
+	svg {fill: @white;}
+	p {margin-left: 35px;}
 }
 
 .svg-elem {
@@ -131,7 +138,7 @@ input[type="radio"]:checked + label .menu-element{
 .logo {
 	height: 60px;
 	padding: 15px 10px;
-	color: #fff;
+	color: @white;
 	line-height: 25px;
 	box-sizing: border-box;
 }
@@ -151,7 +158,7 @@ svg {fill: rgba(255, 255, 255, 0.6);}
 	height: 1000px;
 	position: relative;
 	margin: 30px;
-	background: #fff;
+	background: @white;
 	img {
 		width: 400px;
 		height: 400px;
